@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, purple, red);
+  overflow: hidden;
+  text-align: center;
+}
+
+#particle-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#welcome-text {
+  position: absolute;
+  z-index: 2;
+  font-size: 5rem;
+  color: transparent; /* Set text color transparent */
+  background: url('https://www.icegif.com/wp-content/uploads/2024/03/fire-icegif-11.gif');
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Hide text fill color */
+  animation: flameAnimation 3s linear infinite; /* Flame animation */
+}
+
+@keyframes flameAnimation {
+  0% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
